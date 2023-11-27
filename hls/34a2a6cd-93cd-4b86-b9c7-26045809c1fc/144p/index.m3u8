@@ -12,9 +12,9 @@ segment2.ts
 segment3.ts
 #EXTINF:4.640000,
 segment4.ts
-#EXTINF:3.600000,
+#EXTINF:4.760000,
 segment5.ts
-#EXTINF:4.480000,
+#EXTINF:3.320000,
 segment6.ts
 #EXTINF:4.160000,
 segment7.ts
@@ -156,9 +156,9 @@ segment74.ts
 segment75.ts
 #EXTINF:4.080000,
 segment76.ts
-#EXTINF:4.160000,
+#EXTINF:4.400000,
 segment77.ts
-#EXTINF:7.120000,
+#EXTINF:6.880000,
 segment78.ts
 #EXTINF:6.640000,
 segment79.ts
@@ -352,11 +352,11 @@ segment172.ts
 segment173.ts
 #EXTINF:1.160000,
 segment174.ts
-#EXTINF:5.160000,
+#EXTINF:5.200000,
 segment175.ts
 #EXTINF:10.000000,
 segment176.ts
-#EXTINF:3.120000,
+#EXTINF:3.080000,
 segment177.ts
 #EXTINF:5.200000,
 segment178.ts
