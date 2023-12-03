@@ -271,7 +271,7 @@ recordDeleteAfter: 24h
 # another entry.
 paths:
   vtv1:
-    runOnDemand: ffmpeg -re -stream_loop -1 -i /opt/stream-video/live/output.mp4 -i /opt/stream-video/live/LogoCDN.png -filter_complex "[0:v]drawtext=text='%{localtime}':x=10:y=10:fontfile=/opt/stream-video/live/font.ttf:fontsize=24:fontcolor=white:borderw=2:bordercolor=black[txt];[txt][1:v]overlay=W-w-150:80[watermarked]" -map "[watermarked]" -c:v libx264 -c:a copy -f rtsp rtsp://localhost:8554/vtv1
+    runOnDemand: ffmpeg -re -stream_loop -1 -i /opt/stream-video/live/output.mp4 -i /opt/stream-video/live/LogoCDN.png -filter_complex "[0:v]drawtext=text='%{localtime}':x=10:y=10:fontfile=/opt/stream-video/live/font.ttf:fontsize=24:fontcolor=white:borderw=2:bordercolor=black[txt];[txt][1:v]overlay=W-w-150:80[watermarked]" -map "[watermarked]" -map 0:a -c:v libx264 -c:a copy -f rtsp rtsp://localhost:8554/vtv1
     runOnDemandRestart: yes
   audio:
     runOnInit: ffmpeg -re -stream_loop -1 -i /opt/stream-video/live/audio -c copy -f rtsp rtsp://localhost:8554/audio
